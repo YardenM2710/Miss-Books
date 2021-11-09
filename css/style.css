@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+p{
+    font-size: 20px;
+}
+
+
+
+body {
+    margin: 0;
+}
+.book-app {
+    height: 90%;
+    background-color: rgb(10, 10, 10);
+}
+.app-main{
+    height: 90vh;
+    background-color: aliceblue;
+}
+
+.app-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(176, 218, 255);
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    height: 7vh;
+    list-style: none;
+    color: rgba(49, 49, 49, 0.596);
+    text-shadow: 5px 5px 20px #FFFFFF;
+}
+.app-footer{
+    background-color: rgb(176, 218, 255);
+    font-size: 2em;
+    text-align: center;
+    border-top: 2px rgba(0, 0, 0, 0.582) solid;
+    height: 5vh;
+    padding: 10px;
+}
+
+.book-list{
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.book-preview-container {
+    background-color: rgba(0, 174, 255, 0.603);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: -1px 2px 18px 1px rgba(0,0,0,0.93);
+}
+.book-preview-container:hover{
+    width: 305px;
+    color: black;
+    background-color: rgba(255, 247, 233, 0.699);
+}
+
+.book-preview span{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    
+
+}
+
+.book-list-img{
+    max-width: 100px;
+    object-fit:fill;
+    margin-right: 10px;
+}
+
+.book-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 207, 136);
+
+}
+.book-details p{
+   font-size: 20px;
+
+}
+.book-details h3{
+   font-size: 50px;
+
+}
+.book-details img{
+   max-width: 200px;
+
+}
+
+.book-details .close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.expensive{
+    color: red;
+}
+.cheap{
+    color: rgb(9, 255, 0);
+    font-weight: bold;
+
+}
+
+
+.on-sale{
+    font-weight: bold;
+    color: rgb(47, 248, 255);
+}
+
+.show-more-btn{
+    cursor: pointer;
+    color: rgb(0, 195, 255);
+}
+.book-filter{
+    padding: 10px;
+}
+.book-filter input{
+    padding: 3px;
+    cursor: pointer;
+}
+.book-filter label{
+    font-size: 25px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+
+       color: red;
+}
+
+ @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+
+  /* REVIEW */
+  .add-review{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 30%;
+      left: 40%;
+        padding: 10px;
+      height: 500px;
+      width: 400px;
+      gap: 20px;
+      background-color: aliceblue;
+  }
+
+  .review-list{
+      list-style: none;
+  }
+  .succes{
+      background-color: rgb(17, 238, 17);
+  }
+  .error{
+      background-color: rgb(255, 73, 49);
+  }
+
+  
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.active{
+    color: black;
+}
+
+.fade-enter, .fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+    {
+    opacity: 0;
+}
+
+.user-msg{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    
+}
+.home-page{
+    background-color: rgba(0, 0, 0, 0.644)
+}
+
+.home{
+    display: flex;
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(107, 214, 233);
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 4px #000000;
+} 
+.home h1{
+    font-size: 3em;
+}
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  
+  .vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+
+ @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
